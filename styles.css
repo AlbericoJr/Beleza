@@ -7,12 +7,12 @@
 
 /* Variáveis CSS - Fácil customização */
 :root {
-    --primary-color: #e91e63;
-    --secondary-color: #f8bbd0;
+    --primary-color: #BA487F;
+    --secondary-color: #BA487F;
     --text-dark: #333;
     --text-light: #666;
     --white: #ffffff;
-    --bg-light: #fce4ec;
+    --bg-light: #FFECCC;
 }
 
 /* Estilos Base */
@@ -73,7 +73,7 @@ nav {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(135deg, var(--bg-light) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(160deg, var(--bg-light) 20%, var(--secondary-color) 100%);
     padding: 120px 5% 80px;
     text-align: center;
 }
@@ -93,12 +93,31 @@ nav {
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: var(--text-light);
+    color: var(--white);
     animation: fadeInUp 1s ease 0.2s;
     animation-fill-mode: both;
 }
 
 .cta-button {
+    display: flex
+;
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    animation: fadeInUp 1s ease 0.4s;
+    animation-fill-mode: both;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    margin: auto;
+}
+/* .cta-button {
     display: inline-block;
     background: var(--primary-color);
     color: var(--white);
@@ -110,11 +129,11 @@ nav {
     animation: fadeInUp 1s ease 0.4s;
     animation-fill-mode: both;
     box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
-}
+} */
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+    box-shadow: 0 6px 20px rgba(228, 226, 226, 0.4);
 }
 
 /* ===== ANIMAÇÕES ===== */
@@ -310,6 +329,7 @@ footer {
     border-radius: 50%;
     font-size: 1.3rem;
     transition: all 0.3s;
+    text-decoration: none;
 }
 
 .social-links a:hover {
